@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Satisfy&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", cursive;
+    font-weight: 400;
+    font-style: normal;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 130px;
+    padding-top: 10px;
+    padding-left: 200px;
+    padding-right: 200px;
+    position: absolute;
+    width: 100%;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li a {
+    margin-right: 20px;
+    color: black;
+    text-decoration: none;
+    font-family: "Montserrat", cursive;
+    font-weight: 600;
+    font-style: normal;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.navbar ul li a:hover {
+    color: coral;
+    cursor: pointer;
+}
+
+nav h1 {
+    font-family: "Satisfy", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4rem;
+    color: white;
+}
+
+nav h1:hover {
+    cursor: pointer;
+}
+
+nav h1 a {
+    text-decoration: none;
+    color: coral;
+}
+
+.hero-image {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+    object-position: center;
+    position: relative;
+    z-index: -1;
+    filter: grayscale(100%);
+    opacity: 0.8;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    width: 300px;
+}
+
+#start {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#stop {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#reset {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#timer-p {
+    grid-column: 4;
+    grid-row: 1;
+    font-size: 2rem;
+}
+
+.button {
+    font-size: 16px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    padding: 13px 20px 13px;
+    outline: 0;
+    border: 1px solid black;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(95, 95, 95, 0);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button:after {
+    content: "";
+    background-color: coral;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+    transition: 0.2s;
+}
+
+.button:hover:after {
+    top: 0px;
+    left: 0px;
+}
+
+.timer {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    justify-content: center;
+    padding-bottom: 200px;
+}
+
+#timer-p {
+    margin-right: 100px;
+    font-weight: 500;
+    font-size: 3.5rem;
+    width: 300px;
+}
+
+.h {
+    font-size: 4rem;
+    text-align: center;
+    width: 100vw;
+    font-family: "Satisfy", cursive;
+    margin-top: 100px;
+}
+
+.reviews {
+    display: flex;
+    width: 100vw;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: start;
+    padding-bottom: 200px;
+}
+
+.review {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+}
+
+.review img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.review-p {
+    width: 300px;
+    text-align: center;
+}
+
+#serving {
+    color: white;
+    margin-top: 240px;
+    font-size: 2rem;
+}
